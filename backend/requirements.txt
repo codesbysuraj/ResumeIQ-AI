@@ -1,0 +1,43 @@
+# =============================================================================
+# ResumeIQ AI — Backend Dependencies
+# =============================================================================
+# Install with:
+#   pip install -r requirements.txt
+#
+# After installing spaCy, download the language model:
+#   python -m spacy download en_core_web_sm
+# =============================================================================
+
+# ── Web Framework ──────────────────────────────────────────────────────────
+fastapi==0.139.2
+uvicorn[standard]==0.51.0
+python-multipart==0.0.32
+
+# ── Configuration & Validation ─────────────────────────────────────────────
+pydantic==2.13.4
+pydantic-settings==2.14.2
+python-dotenv==1.2.2
+email-validator==2.3.0
+
+# ── Database ───────────────────────────────────────────────────────────────
+psycopg2-binary==2.9.12
+
+# ── Document Parsing ───────────────────────────────────────────────────────
+pymupdf==1.28.0
+python-docx==1.2.0
+
+# ── NLP ────────────────────────────────────────────────────────────────────
+spacy==3.8.13
+sentence-transformers==5.6.0
+scikit-learn==1.9.0
+numpy==2.5.1
+
+# ── AI Services ────────────────────────────────────────────────────────────
+google-generativeai==0.8.6
+langgraph==0.2.60
+langchain-core==0.3.21
+
+# ── Testing ────────────────────────────────────────────────────────────────
+# (For dev verification, packages already installed in venv)
+pytest==9.1.1
+httpx==0.28.1
